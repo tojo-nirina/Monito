@@ -157,11 +157,11 @@ button { border: none;}
 
 .toggle {display: none;}
     
-.responsive {display: none!important;}
+.bar-menu {display: none!important;}
     
-.responsive-btn-more-view {display: none!important;}
+.btn-more-view {display: none!important;}
 
-.responsive-btn-more-view .button {
+.btn-more-view .button {
     display: flex;
     justify-content: center;
 }
@@ -469,7 +469,7 @@ header .svg-inline--fa {
     justify-content: end;
 }
 
-#knowledge .responsive-btn-more-view {
+#knowledge .btn-more-view {
     display: none!important;
 }
 
@@ -831,9 +831,9 @@ header .svg-inline--fa {
 
     .img-block {display: none;}
         
-    .responsive {display: block!important;}
+    .bar-menu {display: block!important;}
         
-    .responsive {
+    .bar-menu {
         display: flex!important;
         align-items: center!important;
         justify-content: space-between!important;
@@ -878,14 +878,6 @@ header .svg-inline--fa {
 }
 
 @media screen and (max-width: 992px){
-
-    .responsive {display: block!important;}
-        
-    .responsive {
-        display: flex!important;
-        align-items: center!important;
-        justify-content: space-between!important;
-    }
 
     #about .container .more-friend {margin-top: 35px;}
        
