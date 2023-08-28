@@ -414,7 +414,7 @@ header .svg-inline--fa {
 #more-friends {padding: 0 130px;}
 
 #more-friends .container {
-    background-image: url("/assets/pictures/bg/Banner (1).png") !important;
+    background-image: url("/assets/pictures/bg/Bg1.png")!important;
     border-radius: 20px;
     display: flex;
     background-size: cover!important;
@@ -548,7 +548,7 @@ header .svg-inline--fa {
 #adoption {padding: 60px 130px;}
     
 #adoption .container {
-    background-image: url("/assets/pictures/bg/Banner (2).png");
+    background-image: url("/assets/pictures/bg/Bg2.png")!important;
     background-size: cover;
     display: flex;
     justify-content: space-between;
@@ -747,7 +747,7 @@ header .svg-inline--fa {
     }
 
     #more-friends .container {
-        background-image: url("/assets/pictures/bg/Banner.png") !important;
+        background-image: url("/assets/pictures/bg/Bg4.png") !important;
     }
 
     #more-friends .text {

@@ -262,6 +262,10 @@ header { background: #FFF!important;}
     margin-top: 40px;
 }
 
+.dog-container .arrow .next, .prev{
+    cursor: pointer;
+}
+
 .dog-container .arrow button {
     background: none;
     width: 34px;
@@ -271,7 +275,7 @@ header { background: #FFF!important;}
     line-height: 24px;
 }
 
-.dog-container .arrow .btn-1 {
+.dog-container .arrow .indicator:hover {
     background: rgba(0, 52, 89, 1);
     border-radius: 8px;
     color: #FFF;
@@ -299,7 +303,7 @@ header { background: #FFF!important;}
 }
 
 #more-friends .container {
-    background-image: url("/assets/pictures/bg/Banner (3).png") !important;
+    background-image: url("/assets/pictures/bg/Bg3.png")!important;
     border-radius: 20px;
     display: flex;
     background-size: cover!important;
@@ -435,7 +439,7 @@ header { background: #FFF!important;}
     }
 
     #more-friends .container {
-        background-image: url("/assets/pictures/bg/Frame 134.png") !important;
+        background-image: url("/assets/pictures/bg/Bg5.png")!important;
     }
 
     #more-friends .text .title {

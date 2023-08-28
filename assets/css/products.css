@@ -250,6 +250,31 @@ table .td {position: absolute;}
     gap: 20px;
 }
 
+#people .indicators-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 20px;
+}
+
+#people .indicators {
+    width: 22px;
+    height: 9px;
+    background: rgba(0, 52, 89, 1);
+    border-radius: 7.5px;
+}
+
+#people .indicator {
+    width: 9px;
+    height: 9px;
+    border-radius: 7.5px;
+    background: rgba(204, 209, 210, 1);
+}
+#people .indicator:hover {
+    background: rgba(0, 52, 89, 1);
+}
+
 /*  ***********/
 .carousel-container {
     max-width: 800px;
@@ -284,6 +309,7 @@ table .td {position: absolute;}
 }
 
 .prev { left: 15px; }
+
 .next { right: 15px; }
 
 .slide-text {
@@ -348,6 +374,7 @@ table .td {position: absolute;}
     from {opacity: 0}
     to {opacity: 1}
 }
+
  /*************/
 #dogs { padding: 28px 130px;}
    
@@ -411,6 +438,7 @@ table .td {position: absolute;}
 #dogs .row-pets img  { width: 100%;}
    
 /*******/
+
 @media screen and (max-width: 1430px) {
     #dog { padding: 0 50px;}
        
@@ -428,21 +456,23 @@ table .td {position: absolute;}
        
     #people {padding: 28px 32px;}
         
-    #dogs {padding: 28px 32px;}
-        
+    #dogs {padding: 28px 32px;}  
 }
+
 @media screen and (max-width: 1115px) {
     #dog-container {
         display: flex;
         flex-direction: column;
     }
 }
+
 @media screen and (max-width: 992px) {
     #dogs .pets-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
+
 @media screen and (max-width: 756px) {
     #dog-container { padding: 0 0!important;}
        
@@ -480,6 +510,7 @@ table .td {position: absolute;}
     .slide-dot {width: 700px;}
         
 }
+
 @media screen and (max-width: 576px) {
     .carousel-indicators {padding: 0 16px;}
         
@@ -502,5 +533,4 @@ table .td {position: absolute;}
     #dogs {padding: 20px 16px;}
     
     .carousel-slide img { border-radius: 0!important;}
-    
 }
