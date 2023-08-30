@@ -412,15 +412,35 @@ header .svg-inline--fa {
 }
 
 /*******more-friends******/
-#more-friends {padding: 0 130px;}
+#more-friends {
+    padding: 0 130px;
+    position: relative;
+    overflow: hidden;
+}
 
 #more-friends .container {
-    background-image: url("/assets/pictures/bg/Bg1.png")!important;
     border-radius: 20px;
     display: flex;
     background-size: cover!important;
     justify-content: space-between;
     padding: 0 85px 0 0;
+    position: absolute;
+    top: 57px;
+    left: 130px;
+    right: 130px;
+}
+
+#more-friends .bg {
+    width: 100%;
+   
+}
+#more-friends .bg .bg1 {
+    width: 100%;
+    height: 400px;
+}
+
+#more-friends .bg5 {
+    display: none;
 }
 
 #more-friends .text {
@@ -546,14 +566,26 @@ header .svg-inline--fa {
 }
 
 /*****adoption*****/
-#adoption {padding: 60px 130px;}
+#adoption {
+    position: relative;
+    padding: 30px 130px;
+}
     
 #adoption .container {
-    background-image: url("/assets/pictures/bg/Bg2.png")!important;
     background-size: cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+}
+
+#adoption .bg-second {
+    width: 100%;
+}
+
+#adoption .bg-second .bg2 {
+    width: 100%;
+    height: 378px;
 }
 
 #adoption .container .title-content {
@@ -638,6 +670,12 @@ header .svg-inline--fa {
         display: flex;
         justify-content: space-between;
         gap: 14px;
+    }
+
+    #more-friends .container {
+        left: 0px;
+        right: 10px;
+        top: 118px;
     }
 }
 
@@ -747,8 +785,20 @@ header .svg-inline--fa {
         padding: 0;
     }
 
-    #more-friends .container {
-        background-image: url("/assets/pictures/bg/Bg4.png") !important;
+    #more-friends .bg1 {
+       display: none;
+    }
+
+    #more-friends .bg5 {
+        display: block;
+        width: 100%!important;
+        height: 900px;
+    }
+
+    #more-friends {
+        padding: 0 130px;
+        position: relative;
+        overflow: visible;
     }
 
     #more-friends .text {
@@ -762,13 +812,15 @@ header .svg-inline--fa {
     }
 
     #more-friends .text .p {
-        max-width: 50%;
+        max-width: 378px;
         margin: auto;
     }
 
+    #more-friends .container { gap: 128px;}
+
     #more-friends .container .img {text-align: center;  }
         
-    #more-friends .container .img img {width: 100%;}
+    #more-friends .container .img img {width: 700px;}
         
     .container-product {
         display: grid;
@@ -805,6 +857,10 @@ header .svg-inline--fa {
 
     #adoption .container .title-content {
         justify-content: center;
+    }
+
+    #adoption .bg-second .bg2 {
+        height: 620px;
     }
 
     #knowledge .pets-container {
@@ -936,11 +992,6 @@ header .svg-inline--fa {
         margin-top: 28px;
     }
 
-    #more-friends .text .p {
-        max-width: 80%;
-        margin: auto;
-    }
-
     .row-pet-sellers {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -958,9 +1009,26 @@ header .svg-inline--fa {
         left: -30px;
     }
     header .oval {left: -190px;}
-}
 
+    #more-friends .bg5 {
+        height: 768px;
+    }
+
+    #more-friends .container .img img {
+        width: 500px;
+    }
+}
+@media screen and (max-width: 640px) {
+    #adoption .container .pet3 {
+        width: 400px;
+    }
+
+    #adoption .bg-second .bg2 {
+        height: 500px;
+    }
+}
 @media screen and (max-width: 576px) {
+
     #about .container {
         padding: 0 16px;
         gap: 0;
@@ -990,6 +1058,27 @@ header .svg-inline--fa {
 
     .row-pet-sellers {
         grid-template-columns: 1fr 1fr;
+    }
+
+    #more-friends .container {
+        gap: 90px;
+    }
+
+    #more-friends .container .img img {
+        width: 400px;
+    }
+
+    #more-friends .bg5 {
+        height: 702px;
+    }
+
+    #adoption .container {
+        position: relative;
+        background: #FFE7BA;
+    }
+
+    #adoption .bg-second {
+       display:none;
     }
 }
 
@@ -1032,7 +1121,13 @@ header .svg-inline--fa {
     }
 
     #more-friends .container {
+        position: relative!important;
         background: #FFE7BA!important;
+        top: 10px;
+    }
+
+    #more-friends .container .img img {
+        width: 320px;
     }
 
     #more-friends .text .title {
@@ -1054,6 +1149,10 @@ header .svg-inline--fa {
 
     #more-friends .text .p { max-width: 100%;}
 
+    #more-friends .bg5 {
+       display: none;
+    }
+
     #adoption .btn-container {
         flex-direction: column;
     }
@@ -1061,5 +1160,7 @@ header .svg-inline--fa {
     #adoption .container .text .small-title {
         font-size: 22px;
     }
-    
+    #adoption .container .pet3 {
+        width: 280px;
+    }
 }

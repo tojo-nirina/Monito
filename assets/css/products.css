@@ -231,11 +231,6 @@ table .td {position: absolute;}
 .guarantees {display: none;}
     
 #people { padding: 28px 130px;}
-   
-#people .carousel-img {
-    overflow: hidden;
-    padding: 16px;
-}
 
 #people .title {
     color:rgba(0, 23, 31, 1);
@@ -245,9 +240,15 @@ table .td {position: absolute;}
 }
 
 #people .carousel-img {
+    overflow: hidden;
+    padding: 16px;
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+#people .carousel-img img {
+    height: 340px;
 }
 
 #people .indicators-carousel {
