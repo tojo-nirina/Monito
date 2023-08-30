@@ -67,6 +67,7 @@ button {border: none;}
 }
 
 .right-nav form input {
+    width: 100%;
     outline: none;
     border: none;
     cursor: pointer;
@@ -110,7 +111,7 @@ button {border: none;}
 }
 
 .vnd select {
-    width: 70px!important;
+    width: 94px!important;
     border: none;
     outline: none;
     padding: 5px;

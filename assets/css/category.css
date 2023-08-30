@@ -236,7 +236,8 @@ header { background: #FFF!important;}
     
 .row-dog img {
     border-radius: 12px;
-    width: 100%;
+    width: 264px;
+    height: 264px;
 }
 
 .row-dog .small-title {
@@ -283,7 +284,7 @@ header { background: #FFF!important;}
 
 #more-friends {
     padding: 0 130px;
-    position: relative;
+    position: relative!important;
     top: 100px;
 }
 
@@ -400,7 +401,7 @@ header { background: #FFF!important;}
     #more-friends { padding: 0 32px!important;}
 }
 
-@media screen and (max-width: 1115px)  {
+@media screen and (max-width: 1130px)  {
     #about-category {background: #FFF;}
         
     #about-category .img img { width: 450px!important;}
@@ -503,14 +504,24 @@ header { background: #FFF!important;}
     #more-friends {
         padding: 0 50px!important;
     }
-}
-@media screen and (max-width: 756px)  {
+
     .small-dog {
         display: grid;
         grid-template-columns:1fr 1fr;
         gap: 20px 10px;
     }
 
+    .row-dog img {
+        width: 100%;
+        height: 364px;
+    }
+}
+@media screen and (max-width: 756px)  {
+
+    .row-dog img {
+        height: 264px;
+    }
+    
     #dog .container {
         display: flex;
         flex-direction: column;
@@ -541,12 +552,13 @@ header { background: #FFF!important;}
         justify-content: left;
         margin-top: 25px;
     }
+
 }
 @media screen and (max-width: 576px)  {
     #dog {padding: 0 16px;}
     
     #more-friends { padding: 0 16px!important;}
-    
+
 }
 @media screen and (max-width: 500px) {
     #more-friends .container .img img {
@@ -555,6 +567,10 @@ header { background: #FFF!important;}
 
     #more-friends .btn-container .btn-1 {
         padding: 10px 9px 10px 11px;
+    }
+
+    .row-dog img {
+        height: 200px;
     }
 }
 @media screen and (max-width: 400px) {

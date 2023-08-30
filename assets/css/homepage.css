@@ -71,6 +71,7 @@ button { border: none;}
 }
 
 .right-nav form input {
+    width: 100%;
     outline: none;
     border: none;
     cursor: pointer;
@@ -785,11 +786,21 @@ header .svg-inline--fa {
     #adoption .container {
         display: flex;
         flex-direction: column;
+        gap: 30px;
+        border-radius: 30px;
+    }
+
+    #adoption .btn-container {
+        justify-content: center;
     }
 
     #adoption .container .text {
         padding: 0!important;
         text-align: center;
+    }
+
+    #adoption .container .pet3 {
+        width: 100%;
     }
 
     #adoption .container .title-content {
@@ -930,10 +941,16 @@ header .svg-inline--fa {
         margin: auto;
     }
 
-    #pet-sellers { display: none;}
-       
-    #adoption {display: none;}
-        
+    .row-pet-sellers {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #pet-sellers .container {
+        flex-direction: column;
+    }
+    #pet-sellers .title-flex {
+        width: 100%;
+    }
+
     .nav {width: 100%;}
         
     .img-oval img {
@@ -970,9 +987,24 @@ header .svg-inline--fa {
     }
 
     header { padding: 15px 16px;}
+
+    .row-pet-sellers {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 400px) {
+
+    .btn-container .btn-1, .btn-2 {
+        width: 90%;
+        margin: auto;
+    }
+
+    .btn-container .btn-2 {
+        width: 90%;
+        margin: auto;
+    }
+
     .more-friend h1 {
         font-size: 40px;
         line-height: 55px;
@@ -984,7 +1016,7 @@ header .svg-inline--fa {
     }
 
     #about .container .img2 img {
-        width: 340px!important;
+        width: 330px!important;
     }
 
     #about .btn-container {
@@ -992,14 +1024,42 @@ header .svg-inline--fa {
         flex-direction: column;
     }
 
-    .btn-container .btn-2 {width: 100%;}
-        
     .pets-container {grid-template-columns: 1fr;}
         
     #more-friends .text .content .btn-container {
         justify-content: center;
         flex-direction: column;
     }
+
+    #more-friends .container {
+        background: #FFE7BA!important;
+    }
+
+    #more-friends .text .title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .more-friend h1 {
+        font-size: 37px;
+    }
+
+    .more-friend h2 {
+        font-size: 28px;
+    }
+
+    #more-friends .text {
+        padding: 10px;
+    }
+
     #more-friends .text .p { max-width: 100%;}
+
+    #adoption .btn-container {
+        flex-direction: column;
+    }
+
+    #adoption .container .text .small-title {
+        font-size: 22px;
+    }
     
 }
